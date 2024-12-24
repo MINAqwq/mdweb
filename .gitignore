@@ -1,0 +1,4 @@
+out
+scripts/config.bash
+src/*
+release.tgz
