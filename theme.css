@@ -77,6 +77,10 @@ pre {
     padding: 1%;
 }
 
+code {
+    background-color: var(--color-fg);
+}
+
 blockquote {
     padding: 1%;
     font-style: italic;
@@ -185,5 +189,40 @@ body::before {
 }
 
 img {
-    height: 200px;
+    height: 250px;
+}
+
+table {
+    margin-bottom: 2%;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid var(--color-fg);
+}
+
+tr {
+    border-bottom: 2px solid var(--color-fg);
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-fg);
+    border-bottom: 2px solid var(--color-bg);
+}
+
+td {
+    border-right: 2px solid var(--color-fg);
+}
+
+th {
+    border-right: 2px solid var(--color-fg);
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul,
+ol {
+    margin-bottom: 1%;
+    list-style-position: inside;
+    margin-left: 1%;
 }
