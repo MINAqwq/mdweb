@@ -55,6 +55,7 @@ do
     echo -n "<!DOCTYPE html><head><title>/${TITLE}/</title>" > $html_file
     echo -n '<meta charset="UTF-8">' >> $html_file
     echo -e -n "<link rel=\"stylesheet\" href=\"/theme.css\">" >> $html_file
+    echo -n "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" >> $html_file
     echo -n "</head>" >> $html_file
 
     md2html --github $file >> $html_file || on_error "markdown error"
